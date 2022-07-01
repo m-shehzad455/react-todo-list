@@ -12,14 +12,14 @@ const CreateTask = ({modal,toggle,save}) => {
             setTaskName(value)
         }else{
             setDescription(value)
-        }
+        } 
     }
 
     const handleSave = () => {
         let taskObj = {}
         taskObj["Name"] = taskName
         taskObj["Description"] = description
-        save(taskObj)
+        save(taskObj)                                                                                                               
     }
 
     return (
@@ -29,7 +29,7 @@ const CreateTask = ({modal,toggle,save}) => {
              <form>
                   <div className='form-group'>
                       <label>Task Name</label>
-                      <input type="text" className='form-control' value={taskName} onChange = {handleChange} name="taskname"/>
+                      <input type="text" className='form-control' value={taskName} onChange = {handleChange} name="taskName"/>
                   </div>
                   <div className='form-group'>
                       <label>Task Name</label>
